@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LongString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string iunak = "Stani,stani iunak balkanski!";
+            int length = iunak.Length;
+            Console.WriteLine(iunak.Length);
+            for (int i = 0; i < length; i++)
+            {
+                Console.WriteLine("iunak[{0}]={1}",i,iunak[i]);
+            }
+            foreach (var ch in iunak)  //chrez tozi cikul obhojdame masiva bez index duljina 
+            {
+                Console.WriteLine(ch);
+                
+
+            }
+            Console.WriteLine();
+            Console.WriteLine(iunak[12]); //tuk vadim samo 12ti simvol ot niza 
+            Console.WriteLine();
+            Console.WriteLine(iunak[27]);//tuk element 27 primerno 
+
+        }
+    }
+}
